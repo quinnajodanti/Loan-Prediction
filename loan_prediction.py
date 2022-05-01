@@ -9,9 +9,9 @@ import pickle
 import streamlit as st
 from PIL import Image
 
-model =  pickle.load(open('D:/Downloads/jupyter/Loan Prediction/loan.pkl', 'rb'))
+model =  pickle.load(open('loan.pkl', 'rb'))
 
-img1 = Image.open('D:\Downloads\jupyter\Loan Prediction\loan.jpg')
+img1 = Image.open('loan.jpg')
 st.image(img1)
 st.title('Loan Prediction Using Machine Learning')
 
