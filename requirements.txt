@@ -3,3 +3,4 @@ streamlit==1.4.0
 uvicorn==0.16.0
 scikit-learn
 nltk
+protobuf~=3.19.0
