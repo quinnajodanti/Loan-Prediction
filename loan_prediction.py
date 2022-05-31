@@ -16,7 +16,18 @@ st.image(img1)
 st.title('Loan Prediction Using Machine Learning')
 
 def run():
-    
+    col1 = st.columns(1)
+    col1_expander = st.expander("More Info")
+    with col1_expander :
+        st.subheader('About')
+        st.write('This Loan prediction streamlit web app takes full name, gender, marital status, dependents, \
+                 education, employment status, applicant’s income, co-applicant’s income, loan amount, loan duration, \
+                 credit history and property area, after receiving input, the web app is using Support vector machine \
+                 model to predict whether the bank should give the applicant loan based on the information.')
+        st.write('这个贷款预测流线型网络应用程序接受全名、性别、婚姻状况、家属、教育、就业状况、\
+                 申请人收入、共同申请人收入、贷款金额、贷款期限、信用记录和财产区域，在收到输入后，\
+                 网络应用程序正在使用支持向量机模型来预测银行是否应该根据信息给申请人贷款。')
+        
     ## Full name
     name = st.text_input('Full Name')
     
